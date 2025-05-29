@@ -1,0 +1,33 @@
+$modifiers: left, right, top, bottom;
+$border: 1px dashed var(--dash-gray);
+$borderRadiusXs: 0.375rem;
+$borderRadiusSm: 0.5rem;
+$borderRadius: 0.75rem;
+$borderRadiusMd: 1rem;
+$borderRadiusLg: 1.5rem;
+
+@mixin dashed-border-modifiers {
+  .dashed {
+    border: $border;
+
+    @each $mod in $modifiers {
+      &-#{$mod} {
+        border-#{$mod}: $border;
+      }
+    }
+  }
+}
+
+@mixin selection {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+@mixin card {
+  border: 1px solid var(--dash-gray);
+  border-radius: $borderRadius;
+}
+
+@mixin type {
+  animation: type 1s infinite;
+}
