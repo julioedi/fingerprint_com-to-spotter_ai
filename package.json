@@ -18,6 +18,7 @@
     "@babel/preset-typescript": "^7.27.0",
     "babel-loader": "^10.0.0",
     "copy-webpack-plugin": "^13.0.0",
+    "dotenv": "^16.5.0",
     "engine.io-client": "^6.6.3",
     "fingerprint_com-to-spotter_ai": "file:",
     "react": "^19.1.0",
